@@ -1,4 +1,4 @@
-package algorithmCode.InterestingCode;
+package algorithmCode.base;
 
 /**
  * 描述：菲波拉契数列问题
