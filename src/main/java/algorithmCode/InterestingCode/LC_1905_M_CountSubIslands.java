@@ -29,6 +29,7 @@ public class LC_1905_M_CountSubIslands {
         //把不符合子岛的打沉
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
+                //grid1 是水，但grid2是陆地的
                 if (grid1[i][j] == 0 && grid2[i][j] == 1) {
                     // 这个岛屿肯定不是子岛，淹掉
                     dfs(grid2, i, j);
