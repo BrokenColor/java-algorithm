@@ -21,25 +21,22 @@ public class LC_1261_M_FindElements {
     private TreeNode root;
 
     public LC_1261_M_FindElements(TreeNode root) {
-        root.val = 0;
-        recursion(root);
+        recursion(root, 0);
         this.root = root;
     }
 
     /**
      * 递归遍历树修改节点值
-     * @param root
+     *
+     * @param node
      */
-    void recursion(TreeNode root) {
-        if (root.left == null && root.right == null) return;
-        if (root.left != null) {
-            root.left.val = (root.val * 2) + 1;
-            recursion(root.left);
-        }
-        if (root.right != null) {
-            root.right.val = (root.val * 2) + 2;
-            recursion(root.right);
-        }
+    void recursion(TreeNode node, int val) {
+        if (node == null) return;
+        node.val = val;
+
+        recursion(node.left, node.val * 2 + 1);
+        recursion(node.right, node.val * 2 + 2);
+
     }
 
     public boolean find(int target) {
@@ -52,7 +49,7 @@ public class LC_1261_M_FindElements {
         if (node == null) return false;
         //判断是否目标值
         if (node.val == target) return true;
-        return  dfs(node.left, target) || dfs(node.right, target);
+        return dfs(node.left, target) || dfs(node.right, target);
     }
 }
 
