@@ -1,5 +1,7 @@
 package algorithmCode.InterestingCode;
 
+import java.util.HashSet;
+
 /**
  * 1261.在受污染的二叉树中查找元素
  *
@@ -52,6 +54,50 @@ public class LC_1261_M_FindElements {
         return dfs(node.left, target) || dfs(node.right, target);
     }
 }
+
+/**
+ * 使用 深度优先搜索 + 哈希表
+ *
+ */
+class LC_1261_M_FindElements1 {
+
+    public static void main(String[] args) {
+        TreeNode node2 = new TreeNode(-1, null, null);
+        TreeNode node1 = new TreeNode(-1, null, null);
+        TreeNode root = new TreeNode(-1, node2, node1);
+        LC_1261_M_FindElements solution = new LC_1261_M_FindElements(root);
+        System.out.println(solution.find(1));
+        System.out.println(solution.find(2));
+    }
+
+    private HashSet<Integer> set;
+
+
+    public LC_1261_M_FindElements1(TreeNode root) {
+        set = new HashSet<>();
+        recursion(root, 0);
+    }
+
+    /**
+     * 递归遍历树修改节点值
+     *
+     * @param node
+     */
+    void recursion(TreeNode node, int val) {
+        if (node == null) return;
+        node.val = val;
+        set.add(val);
+        recursion(node.left, node.val * 2 + 1);
+        recursion(node.right, node.val * 2 + 2);
+
+    }
+
+    public boolean find(int target) {
+        return set.contains(target);
+    }
+
+}
+
 
 class TreeNode {
     int val;
