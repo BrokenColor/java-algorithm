@@ -7,7 +7,7 @@ import algorithmCode.InterestingCode.entity.ListNode;
  *
  * @Author bc
  * @Date 2023/3/11 12:17
- * @Description: TODO
+ * @Description: 链表
  */
 public class LC_2_M_AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
