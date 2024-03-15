@@ -5,6 +5,7 @@ package algorithmCode.InterestingCode;
  *
  * @author bc
  * @date 2022/11/22 15:34
+ * 双指针
  */
 public class LC_5_M_LongestPalindrome {
 
