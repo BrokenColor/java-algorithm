@@ -15,6 +15,12 @@ public class LC_34_M_SearchRange {
         Arrays.stream(solution.searchRange(nums, target)).forEach(System.out::print);
     }
 
+    /**
+     * 二分查找的方式
+     * @param nums
+     * @param target
+     * @return
+     */
     public int[] searchRange(int[] nums, int target) {
         int left = binarySearch(nums, target, true);
         int right = binarySearch(nums, target, false) - 1;
