@@ -2,6 +2,7 @@ package algorithmCode.InterestingCode;
 
 /**
  * 36. 有效的数独
+ *
  */
 public class LC_36_M_IsValidSudoku {
     public static void main(String[] args) {
