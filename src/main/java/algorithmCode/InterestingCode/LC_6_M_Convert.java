@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * 6. N 字形变换
+ * 字符串
  */
 public class LC_6_M_Convert {
     public static void main(String[] args) {
