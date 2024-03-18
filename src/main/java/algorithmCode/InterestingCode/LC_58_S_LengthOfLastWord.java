@@ -4,7 +4,6 @@ package algorithmCode.InterestingCode;
  * 58. 最后一个单词的长度
  */
 public class LC_58_S_LengthOfLastWord {
-
     public static void main(String[] args) {
         LC_58_S_LengthOfLastWord solution = new LC_58_S_LengthOfLastWord();
         System.out.println(solution.lengthOfLastWord("Hello World"));
