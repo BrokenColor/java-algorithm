@@ -4,7 +4,6 @@ import algorithmCode.InterestingCode.entity.ListNode;
 
 /**
  * 19.删除链表的倒数第 N 个结点
- *
  * @date 2022/2/17 15:41
  */
 public class LC_19_M_RemoveNthFromEnd {
