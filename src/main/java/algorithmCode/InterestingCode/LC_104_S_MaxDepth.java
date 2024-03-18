@@ -5,7 +5,7 @@ import algorithmCode.InterestingCode.entity.TreeNode;
 /**
  * 104. 二叉树的最大深度
  *
- * @author guwanli
+ * @author bc
  * @date 2022/11/22 18:20
  */
 public class LC_104_S_MaxDepth {
