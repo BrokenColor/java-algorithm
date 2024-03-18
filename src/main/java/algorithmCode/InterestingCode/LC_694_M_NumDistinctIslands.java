@@ -9,9 +9,9 @@ import java.util.HashSet;
  * @Date 2024/3/9 22:30
  * @Description: TODO
  */
-public class LC_M_694_NumDistinctIslands {
+public class LC_694_M_NumDistinctIslands {
     public static void main(String[] args) {
-        LC_M_694_NumDistinctIslands solution = new LC_M_694_NumDistinctIslands();
+        LC_694_M_NumDistinctIslands solution = new LC_694_M_NumDistinctIslands();
         int[][] grid = {
                 {1,1,0,1,1},
                 {1,0,0,0,0},
