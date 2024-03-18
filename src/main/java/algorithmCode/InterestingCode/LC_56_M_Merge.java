@@ -11,7 +11,6 @@ import java.util.List;
  * @date 2023/7/27 10:24
  */
 public class LC_56_M_Merge {
-
     public static void main(String[] args) {
         LC_56_M_Merge solution = new LC_56_M_Merge();
         int[][] intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
