@@ -5,10 +5,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * 51.N 皇后
  * n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
  * 给你一个整数 n ，返回所有不同的 n 皇后问题 的解决方案。
  *
- * @author guwanli
+ * @author bc
  * @date 2021/9/29 8:46 下午
  */
 public class LC_51_H_NQueens {
