@@ -10,7 +10,6 @@ import java.util.Arrays;
  * @Description: 矩阵
  */
 public class LC_73_M_SetZeroes {
-
     public static void main(String[] args) {
         int[][] matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
         LC_73_M_SetZeroes solution = new LC_73_M_SetZeroes();
