@@ -2,6 +2,7 @@ package algorithmCode.InterestingCode;
 
 /**
  * 27.移除元素
+ *
  */
 public class LC_27_S_RemoveElement {
     public static void main(String[] args) {
