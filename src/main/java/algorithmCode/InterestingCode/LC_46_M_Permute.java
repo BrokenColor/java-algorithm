@@ -8,7 +8,7 @@ import java.util.List;
  * 46 全排列
  * 回溯算法
  *
- * @author guwanli
+ * @author bc
  * @date 2021/9/28 8:20 下午
  */
 public class LC_46_M_Permute {
