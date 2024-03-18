@@ -21,6 +21,12 @@ public class LC_39_M_CombinationSum {
         return result;
     }
 
+    /**
+     *
+     * @param nums
+     * @param start
+     * @param target
+     */
     public void backTrace(int[] nums, int start, int target) {
         //添加满足条件的 结果
         if (trackSum == target) {
