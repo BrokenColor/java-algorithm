@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 40.组合II
  *
- * @author guwanli
+ * @author bc
  * @date 2022/11/26 22:55
  */
 public class LC_40_M_CombinationSum2 {
