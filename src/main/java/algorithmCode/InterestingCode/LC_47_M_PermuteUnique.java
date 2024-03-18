@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 47.全排列II
  *
- * @author guwanli
+ * @author bc
  * @date 2022/11/29 19:46
  */
 public class LC_47_M_PermuteUnique {
