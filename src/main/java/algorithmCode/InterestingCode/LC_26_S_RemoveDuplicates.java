@@ -3,7 +3,7 @@ package algorithmCode.InterestingCode;
 /**
  * 26.删除有序数组中的重复项
  *
- * @author guwanli
+ * @author bc
  * @date 2022/11/22 16:00
  */
 public class LC_26_S_RemoveDuplicates {
