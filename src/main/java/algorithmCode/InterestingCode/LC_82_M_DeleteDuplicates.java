@@ -10,7 +10,6 @@ import algorithmCode.InterestingCode.entity.ListNode;
  * @Description: 链表
  */
 public class LC_82_M_DeleteDuplicates {
-
     public static void main(String[] args) {
         //head = [1,2,3,3,4,4,5]
         ListNode head = new ListNode(1);
