@@ -10,7 +10,6 @@ import java.util.List;
  * @date 2022/11/25 13:09
  */
 public class LC_78_M_Subsets {
-
     private List<List<Integer>> res = new LinkedList<>();
     private LinkedList<Integer> track = new LinkedList<>();
 
