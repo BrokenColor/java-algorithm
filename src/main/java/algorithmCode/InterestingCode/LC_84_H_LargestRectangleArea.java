@@ -7,7 +7,7 @@ import java.util.Deque;
 /**
  * 84. 柱状图中最大的矩形
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/5 20:46
  */
 public class LC_84_H_LargestRectangleArea {
