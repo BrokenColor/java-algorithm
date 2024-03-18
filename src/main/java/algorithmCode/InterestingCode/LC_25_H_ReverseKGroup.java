@@ -3,7 +3,9 @@ package algorithmCode.InterestingCode;
 import algorithmCode.InterestingCode.entity.ListNode;
 
 /**
- * @author guwanli
+ * 25.K个一组翻转链表
+ *
+ * @author bc
  * @date 2022/3/16 11:09
  */
 public class LC_25_H_ReverseKGroup {
