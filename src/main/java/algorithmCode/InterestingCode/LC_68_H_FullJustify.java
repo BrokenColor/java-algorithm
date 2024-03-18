@@ -5,9 +5,10 @@ import java.util.List;
 
 /**
  * 68. 文本左右对齐
+ *
  * @Author bc
  * @Date 2023/6/2 23:00
- * @Description: TODO
+ * @Description:
  */
 public class LC_68_H_FullJustify {
 
