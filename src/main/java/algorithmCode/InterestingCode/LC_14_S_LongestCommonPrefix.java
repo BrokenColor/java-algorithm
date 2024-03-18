@@ -2,6 +2,7 @@ package algorithmCode.InterestingCode;
 
 /**
  * 14. 最长公共前缀
+ *
  */
 public class LC_14_S_LongestCommonPrefix {
 
