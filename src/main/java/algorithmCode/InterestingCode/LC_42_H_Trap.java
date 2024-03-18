@@ -43,6 +43,11 @@ public class LC_42_H_Trap {
         return sum;
     }
 
+    /**
+     * 双指针
+     * @param height
+     * @return
+     */
     public int trap1(int[] height) {
         int length = height.length;
         //i位置左侧最大值
