@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 22.括号生成
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/8 10:02
  */
 public class LC_22_M_GenerateParenthesis {
