@@ -3,7 +3,7 @@ package algorithmCode.InterestingCode;
 /**
  * 70.爬楼梯
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/3 17:48
  */
 public class LC_70_S_ClimbStairs {
