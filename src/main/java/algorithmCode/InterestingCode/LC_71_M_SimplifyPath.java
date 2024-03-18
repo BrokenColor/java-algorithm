@@ -5,6 +5,7 @@ import java.util.Deque;
 
 /**
  * 71.简化路径
+ *
  */
 public class LC_71_M_SimplifyPath {
     public static void main(String[] args) {
