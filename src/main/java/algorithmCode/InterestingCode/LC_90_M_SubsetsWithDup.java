@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 90.子集II
  *
- * @author guwanli
+ * @author bc
  * @date 2022/11/26 22:26
  */
 public class LC_90_M_SubsetsWithDup {
