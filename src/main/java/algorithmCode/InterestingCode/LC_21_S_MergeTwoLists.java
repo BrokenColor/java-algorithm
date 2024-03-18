@@ -5,7 +5,7 @@ import algorithmCode.InterestingCode.entity.ListNode;
 /**
  * 21. 合并两个有序链表
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/28 10:28
  */
 public class LC_21_S_MergeTwoLists {
