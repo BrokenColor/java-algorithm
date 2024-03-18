@@ -3,8 +3,9 @@ package algorithmCode.InterestingCode;
 /**
  * 11.盛最多水的容器
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/4 18:25
+ * 左右双指针
  */
 public class LC_11_M_MaxArea {
     public static void main(String[] args) {
