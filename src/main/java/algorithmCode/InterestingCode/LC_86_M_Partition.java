@@ -5,7 +5,7 @@ import algorithmCode.InterestingCode.entity.ListNode;
 /**
  * 86 分隔链表
  *
- * @author guwanli
+ * @author bc
  * @date 2023/2/16 16:40
  */
 public class LC_86_M_Partition {
