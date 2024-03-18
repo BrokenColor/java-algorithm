@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 77.组合
  *
- * @author guwanli
+ * @author bc
  * @date 2022/11/25 16:31
  */
 public class LC_77_M_Combine {
