@@ -4,15 +4,15 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 /**
- * 2129.将比昂题首字母大写
+ * 2129.将标题首字母大写
  *
  * @Author bc
  * @Date 2024/3/11 21:37
  * @Description:
  */
-public class LC_S_2129_CapitalizeTitle {
+public class LC_2129_S_CapitalizeTitle {
     public static void main(String[] args) {
-        LC_S_2129_CapitalizeTitle solution = new LC_S_2129_CapitalizeTitle();
+        LC_2129_S_CapitalizeTitle solution = new LC_2129_S_CapitalizeTitle();
         System.out.println(solution.capitalizeTitle("capiTalIze tHe titLe"));
         System.out.println(solution.capitalizeTitle1("capiTalIze tHe titLe"));
     }
