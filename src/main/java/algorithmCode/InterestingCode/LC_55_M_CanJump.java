@@ -5,7 +5,7 @@ package algorithmCode.InterestingCode;
  *
  * @Author bc
  * @Date 2023/5/13 23:48
- * @Description: TODO
+ * @Description:
  */
 public class LC_55_M_CanJump {
     public static void main(String[] args) {
@@ -37,6 +37,12 @@ public class LC_55_M_CanJump {
         return dp[length - 1];
     }
 
+    /**
+     * 动态规划
+     *
+     * @param nums
+     * @return
+     */
     public boolean canJump(int[] nums) {
         return dp(nums, 0);
     }
