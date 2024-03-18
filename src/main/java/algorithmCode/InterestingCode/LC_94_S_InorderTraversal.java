@@ -8,14 +8,14 @@ import java.util.List;
 /**
  * 94. 二叉树的中序遍历
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/7 09:59
  */
 public class LC_94_S_InorderTraversal {
     public static void main(String[] args) {
         LC_94_S_InorderTraversal sample = new LC_94_S_InorderTraversal();
 
-        TreeNode node = new TreeNode(1,null,null);
+        TreeNode node = new TreeNode(1, null, null);
 
         System.out.println(sample.inorderTraversal(node));
     }
