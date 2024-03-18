@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 /**
  * 23. 合并K个升序链表
  *
- * @author guwanli
+ * @author bc
  * @date 2022/1/6 20:30
  */
 public class LC_23_H_MergeKLists {
