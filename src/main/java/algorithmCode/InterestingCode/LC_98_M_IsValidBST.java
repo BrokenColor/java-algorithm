@@ -5,7 +5,7 @@ import algorithmCode.InterestingCode.entity.TreeNode;
 /**
  * 98.验证二叉搜索树
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/9 10:52
  */
 public class LC_98_M_IsValidBST {
