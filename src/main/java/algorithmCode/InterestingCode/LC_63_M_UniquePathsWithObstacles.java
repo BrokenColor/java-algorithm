@@ -3,7 +3,7 @@ package algorithmCode.InterestingCode;
 /**
  * 63. 不同路径 II
  *
- * @author guwanli
+ * @author bc
  * @date 2021/12/22 18:16
  */
 public class LC_63_M_UniquePathsWithObstacles {
