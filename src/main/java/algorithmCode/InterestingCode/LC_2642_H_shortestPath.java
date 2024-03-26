@@ -7,7 +7,7 @@ import java.util.*;
  *
  * @Author bc
  * @Date 2024/3/26 23:33
- * @Description:
+ * @Description: 图, 最短路径
  */
 public class LC_2642_H_shortestPath {
 
@@ -28,7 +28,8 @@ public class LC_2642_H_shortestPath {
 
         /**
          * 构造函数，初始化图。
-         * @param n 图中节点的数量。
+         *
+         * @param n     图中节点的数量。
          * @param edges 图中的边，以二维数组表示，每个边包含起点、终点和边的权重。
          */
         public Graph(int n, int[][] edges) {
@@ -54,7 +55,7 @@ public class LC_2642_H_shortestPath {
          * 向图中添加一条边。
          *
          * @param edge 包含边的两个顶点和边的权重的整型数组，数组的第一个元素是边的起始顶点，第二个元素是边的结束顶点，第三个元素是边的权重。
-         * 例如，edge[0]和edge[1]分别表示边的起点和终点，edge[2]表示边的权重或成本。
+         *             例如，edge[0]和edge[1]分别表示边的起点和终点，edge[2]表示边的权重或成本。
          */
         public void addEdge(int[] edge) {
             // 获取边的起始顶点和结束顶点以及权重
