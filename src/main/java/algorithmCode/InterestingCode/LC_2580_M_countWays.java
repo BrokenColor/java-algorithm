@@ -11,15 +11,12 @@ import java.util.Comparator;
  * @Description: 数组
  */
 public class LC_2580_M_countWays {
-
     public static void main(String[] args) {
         LC_2580_M_countWays solution = new LC_2580_M_countWays();
         int[][] ranges = {{6, 10}, {5, 15}};
         System.out.println(solution.countWays(ranges));
     }
-
     static final int MOD = 1000000007;
-
     /**
      * 统计通过合并区间可以得到的唯一组合数量。
      *
