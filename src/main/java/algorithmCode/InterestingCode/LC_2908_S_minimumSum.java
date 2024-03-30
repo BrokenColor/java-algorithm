@@ -11,6 +11,7 @@ public class LC_2908_S_minimumSum {
     public static void main(String[] args) {
         LC_2908_S_minimumSum solution = new LC_2908_S_minimumSum();
         System.out.println(solution.minimumSum(new int[]{8, 6, 1, 5, 3}));
+        System.out.println(solution.minimumSum1(new int[]{8, 6, 1, 5, 3}));
     }
 
     /**
@@ -47,4 +48,32 @@ public class LC_2908_S_minimumSum {
         // 如果结果未被更新，则表示未找到满足条件的三数之和，返回-1；否则返回最小三数之和
         return res == Integer.MAX_VALUE ? -1 : res;
     }
+
+    /**
+     * 计算数组中最小的三数之和。该函数遍历数组两次，第一次找到从左到右的最小值序列，第二次遍历计算最小的三数之和。
+     *
+     * @param nums 整型数组，包含至少三个元素。
+     * @return 返回数组中最小的三数之和，如果不存在合适的三元组，则返回-1。
+     */
+    public int minimumSum1(int[] nums) {
+        int length = nums.length, res = Integer.MAX_VALUE, mn = Integer.MAX_VALUE;
+        // 计算从左到右的递增序列的最小值。
+        int[] left = new int[length];
+        for (int i = 1; i < length; i++) {
+            left[i] = mn = Math.min(nums[i - 1], mn);
+        }
+
+        int right = nums[length - 1];
+        // 从右往左遍历，寻找可能的最小三数之和。
+        for (int i = length - 2; i > 0; i--) {
+            // 如果当前位置的数和右边最小值都小于它右边的数，则更新可能的最小三数之和。
+            if (left[i] < nums[i] && right < nums[i]) {
+                res = Math.min(res, left[i] + nums[i] + right);
+            }
+            right = Math.min(right, nums[i]);
+        }
+        // 如果没有找到合适的三元组，返回-1，否则返回最小三数之和。
+        return res == Integer.MAX_VALUE ? -1 : res;
+    }
+
 }
