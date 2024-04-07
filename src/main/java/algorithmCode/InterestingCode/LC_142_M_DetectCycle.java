@@ -5,7 +5,7 @@ import algorithmCode.InterestingCode.entity.ListNode;
 /**
  * 142. 环形链表 II
  *
- * @author guwanli
+ * @author bc
  * @date 2022/1/5 17:28
  */
 public class LC_142_M_DetectCycle {
@@ -22,24 +22,30 @@ public class LC_142_M_DetectCycle {
         System.out.println(solution.detectCycle(node));
     }
 
+    /**
+     * 检测链表中是否存在环，并返回环的起始节点。
+     *
+     * @param head 链表的头节点
+     * @return 如果链表中存在环，则返回环的起始节点；如果不存在环，则返回null。
+     */
     public ListNode detectCycle(ListNode head) {
-        if (head == null || head.next == null) return null;
-        //定义两个指针
+        if (head == null || head.next == null) return null; // 若链表为空或只有一个节点，则不存在环，直接返回null
+        // 定义两个指针，一个快指针，一个慢指针，初始都指向头节点
         ListNode fast = head, slow = head;
-        //快指针走完都没有重合说明没有环
+        // 使用快慢指针法判断链表是否存在环
         while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            slow = slow.next;
-            if (fast == slow) break;
+            fast = fast.next.next; // 快指针每次移动两步
+            slow = slow.next; // 慢指针每次移动一步
+            if (fast == slow) break; // 如果快慢指针相遇，则说明链表存在环
         }
-        if (fast == null || fast.next == null) return null;
-        // 重新指向头结点
+        if (fast == null || fast.next == null) return null; // 如果快指针或其下一个节点为null，说明链表不存在环，返回null
+
+        // 重新将慢指针指向头节点，然后快慢指针同时向前移动，直到相遇，相遇点即为环的起始节点
         slow = head;
-        // 快慢指针同步前进，相交点就是环起点
         while (fast != slow) {
             fast = fast.next;
             slow = slow.next;
         }
-        return slow;
+        return slow; // 返回环的起始节点
     }
 }
