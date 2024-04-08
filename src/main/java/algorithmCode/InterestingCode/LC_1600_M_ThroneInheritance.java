@@ -3,7 +3,7 @@ package algorithmCode.InterestingCode;
 import java.util.*;
 
 /**
- * 1600.王伟继承顺序
+ * 1600.王位继承顺序
  *
  * @Author bc
  * @Date 2024/4/7 23:13
