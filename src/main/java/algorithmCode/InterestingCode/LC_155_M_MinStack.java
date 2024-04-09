@@ -5,7 +5,8 @@ import java.util.LinkedList;
 
 /**
  * 155.最小栈
- * @Author
+ *
+ * @Author bc
  * @Date 2023/8/3 20:33
  * @Description: 最小栈
  */
@@ -35,7 +36,7 @@ class MinStack {
 
     public void push(int val) {
         stack.push(val);
-        minStack.push(Math.min(minStack.peek(),val));
+        minStack.push(Math.min(minStack.peek(), val));
     }
 
     public void pop() {
