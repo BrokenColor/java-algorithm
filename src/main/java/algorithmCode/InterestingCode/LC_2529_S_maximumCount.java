@@ -35,19 +35,17 @@ public class LC_2529_S_maximumCount {
     }
 
     /**
-     * 计算数组中1的最大个数。
-     * 该方法首先通过两次调用lowBound方法，分别找到数组中第一个1之前和最后一个1之后的下标，
-     * 然后取两者中较大的值作为1的最大个数。
+     * 计算数组中正数和负数的数量，返回较多的数量。
      *
-     * @param nums 包含0和1的整数数组。
-     * @return 数组中1的最大个数。
+     * @param nums 整型数组，包含任意整数。
+     * @return 数组中正数或负数的数量大的计数。
      */
     public int maximumCount1(int[] nums) {
-        // 找到数组中第一个1之前的位置
+        // 负数的右边界
         int lowBound1 = lowBound(nums, 0);
-        // 找到数组中最后一个1之后的位置
+        // 整数的左边界
         int lowBound2 = lowBound(nums, 1);
-        // 返回数组中1的最大个数
+        // 返回正数，负数的数量大的计数
         return Math.max(lowBound1, nums.length - lowBound2);
     }
 
