@@ -9,18 +9,24 @@ import algorithmCode.InterestingCode.entity.ListNode;
  * @Date 2023/3/12 16:48
  */
 public class LC_206_S_ReverseList {
+    /**
+     * 反转链表。
+     *
+     * @param head 链表的头节点。
+     * @return 反转后的链表的头节点。
+     */
     public ListNode reverseList(ListNode head) {
         ListNode pre = null, curr = head, next;
         while (curr != null) {
-            //存储下一个节点的指针，否则修改完节点指针就找不到下一个节点了
+            // 保存当前节点的下一个节点，以便后续处理
             next = curr.next;
-            //指针修改：把前置节点赋值给当前节点的next
+            // 将当前节点的next指针指向前一个节点，实现节点反转
             curr.next = pre;
-            //把处理完的节点存到pre节点上
+            // 更新前一个节点为当前节点，准备处理下一个节点
             pre = curr;
-            //处理下一个节点
+            // 将当前节点指向下一个节点，继续遍历
             curr = next;
         }
-        return pre;
+        return pre; // 返回反转后的链表的头节点
     }
 }
