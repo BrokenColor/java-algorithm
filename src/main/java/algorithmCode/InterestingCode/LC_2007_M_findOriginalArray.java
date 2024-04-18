@@ -18,7 +18,7 @@ public class LC_2007_M_findOriginalArray {
         LC_2007_M_findOriginalArray solution = new LC_2007_M_findOriginalArray();
         //1,3,4
         System.out.println(Arrays.toString(solution.findOriginalArray(changed)));
-        int[] changed1 = {0,0,0,0};
+        int[] changed1 = {0, 0, 0, 0};
         //0,0
         System.out.println(Arrays.toString(solution.findOriginalArray(changed1)));
     }
