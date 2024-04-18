@@ -21,24 +21,31 @@ public class LC_216_M_CombinationSum3 {
         return result;
     }
 
+    /**
+     * 使用回溯法找到所有和为target，且长度为k的数字组合。
+     * @param k 组合的长度
+     * @param start 当前组合开始的数字索引
+     * @param target 目标和
+     */
     public void backTrace(int k, int start, int target) {
-        //添加满足条件的 结果
+        // 如果当前组合长度等于k且和等于target，则将此组合加入结果集
         if (track.size() == k && trackSum == target) {
             result.add(new LinkedList<>(track));
             return;
         }
-        //过滤超过目标和 或者track大小超过k 停止向下遍历
+        // 如果当前和超过target或当前组合长度超过k，则停止深入遍历
         if (trackSum > target || k < track.size()) {
             return;
         }
 
+        // 从start开始尝试所有可能的数字
         for (int i = start; i < 10; i++) {
-            //选择元素
+            // 尝试将当前数字加入组合
             track.add(i);
             trackSum += i;
-            // 处理下一层
+            // 递归处理下一层
             backTrace(k, i + 1, target);
-            //撤销选择
+            // 撤销当前数字的选择
             track.removeLast();
             trackSum -= i;
         }
