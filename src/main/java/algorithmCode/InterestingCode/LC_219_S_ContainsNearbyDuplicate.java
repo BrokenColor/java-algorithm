@@ -20,25 +20,31 @@ public class LC_219_S_ContainsNearbyDuplicate {
     }
 
     /**
-     * 定义两个指针，p1 p2=p1+k;,判断两个指针中间是否有相等元素
-     * O(N*N)
+     * 判断在给定的整数数组中，是否存在两个元素，它们的下标之差的绝对值不超过k，且它们的值相等。
+     * 该方法的时间复杂度为O(N*N)，其中N为数组的长度。
      *
-     * @param nums 数组
-     * @param k    区间
-     * @return res
+     * @param nums 整数数组，包含待检查的元素。
+     * @param k 一个整数，表示两个元素下标之差的绝对值最大值。
+     * @return 返回一个布尔值，如果存在满足条件的两个元素，则返回true；否则返回false。
      */
     public boolean containsNearbyDuplicate(int[] nums, int k) {
+        // 当数组长度小于等于1且k为0时，认为存在相等元素（因为任意元素与自身满足条件）
         if (nums.length <= 1 && k == 0) return true;
-        boolean res = false;
+        boolean res = false; // 初始化结果为false
+
+        // 遍历数组中的每个元素，查找其后面k个元素中是否有相等的元素
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length && j <= i + k; j++) {
+                // 如果找到相等的元素，则返回true
                 if (nums[i] == nums[j]) {
                     return true;
                 }
             }
         }
+        // 如果遍历完整个数组都没有找到满足条件的元素，则返回false
         return res;
     }
+
 
     /**
      * 使用哈希表处理
