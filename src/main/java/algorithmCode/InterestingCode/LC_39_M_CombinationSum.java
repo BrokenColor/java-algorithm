@@ -22,32 +22,32 @@ public class LC_39_M_CombinationSum {
     }
 
     /**
-     *
-     * @param nums
-     * @param start
-     * @param target
+     * 使用回溯法找到所有能够组成目标和的组合。
+     * @param nums 整数数组，包含所有可选数字。
+     * @param start 开始位置，指定从数组的哪个索引开始搜索。
+     * @param target 目标和，搜索的最终目标。
      */
     public void backTrace(int[] nums, int start, int target) {
-        //添加满足条件的 结果
+        // 检查当前组合是否达到目标和
         if (trackSum == target) {
-            result.add(new LinkedList<>(track));
+            result.add(new LinkedList<>(track)); // 将满足条件的组合添加到结果集中
             return;
         }
-        //过滤超过目标和 停止向下遍历
+        // 如果当前组合的和已经大于目标和，则无需继续搜索
         if (trackSum > target) {
             return;
         }
 
+        // 在指定范围内遍历数组元素
         for (int i = start; i < nums.length; i++) {
-            //选择元素
+            // 将当前元素加入到当前组合中
             track.add(nums[i]);
             trackSum += nums[i];
-            // 同一元素可重复使用，注意参数
+            // 递归搜索下一个元素，允许同一元素重复使用
             backTrace(nums, i, target);
-            //撤销选择
+            // 撤销当前元素的选择，以尝试其他可能的组合
             track.removeLast();
             trackSum -= nums[i];
         }
-
     }
 }
